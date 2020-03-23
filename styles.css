@@ -1,0 +1,62 @@
+
+/* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
+
+
+/* TYPOGRAPHIES */  
+
+    main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
+    .entete { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
+
+/* COULEURS DE FOND */
+
+    header, main { background-color: #FFFFFF; } /* fond blanc */
+    footer { background-color: #FFD54F; } /* fond jaune */
+   
+/* COULEURS */
+
+    .jaune { color: #FFD54F; } /* texte en jaune */
+    .gris { color: #616161; } /* texte en gris */
+    main i { color: #FFD54F; } /* icônes en jaune */
+    footer i { color: #616161; } /* icônes en gris */
+
+    
+/* ---------------------------------------- [ STYLES SPECIFIQUES ] ----------------------------------------- */
+
+    h1 
+        { 
+        font-weight: bold; 
+        font-size: 3em;
+        }
+        
+    h2 
+        { 
+        font-weight: bold; 
+        font-size: 1.5em; 
+        }
+
+    .trait 
+        { 
+        text-decoration: underline #ffd54f solid;
+        }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------  
+
+MEMO COULEURS :    
+                [ Blanc = #FFFFFF; ]
+                [ Jaune = #FFD54F; ]
+                [ Gris = #616161; ]
+MEMO FONTS :   
+                [ Typo générale = 'Baloo Da 2' ]
+                [ Typo Titre principal = 'Raleway Dots' ]
+
+--------------------------------------------------------------------------------------*/

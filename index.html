@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 	<head> 
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles.css" type="text/css" > <!-- Lien CSS-->
-		<link rel="stylesheet" href="fontawesome/css/all.css"> <!--Lien librairie icônes font awesome -->
+		<link rel="stylesheet" href="fontawesome/css/all.css"> <!--Lien icônes https://fontawesome.com/ -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Da+2%7CRaleway+Dots&amp;display=swap" rel="stylesheet"> <!-- Lien typographies https://fonts.google.com/ -->
 
 		<title> CV : Valérie Candon </title>
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> <!-- FAVICON -->
@@ -12,13 +14,13 @@
 
 	<body>
 		
-		<header> <!--  PARTIE EN-TÊTE ---------------------------------------------------------------------------------------------------------------- -->		
-			<h1> VALERIE CANDON </h1>
-			<h2> Développeuse Web Freelance </h2>	
+		<header class="entete"> <!-- PARTIE EN-TÊTE -->		
+			<h1> <span class="jaune">VALERIE</span> CANDON </h1>
+			<h2 class="gris"> <span class="trait">Dévelo</span>ppeuse Web Freelance </h2>	
 		</header> 
 
 		
-		<main> <!--  PARTIE FOND BLANC -------------------------------------------------------------------------------------------------------------- -->
+		<main> <!-- PARTIE FOND BLANC -->
 			
 			<section> <!-- Section Formation --> 
 
@@ -27,7 +29,8 @@
 					<h3> FORMATION </h3> 
 				</header>
 			
-				<article>
+				<article class="gris">
+					<i class="far fa-dot-circle"></i>
 					<h4> OPENCLASSROOMS </h4>
 					<p> Févr. 2020 - Juillet 2020 <br/>à distance </p>
 					<p> Parcours Développeur Web </p>
@@ -47,18 +50,32 @@
 					<h3> EXPERIENCE PROFESSIONNELLE </h3> 
 				</header>
 
-				<article>
+				<article class="gris"> 
+					<i class="far fa-dot-circle"></i>
 					<h4> LA MAISON DU ZERO DECHET </h4>
 					<p> Sept. 2020 - Poste actuel <br/>Paris </p>
 					<p> Développeuse Web Freelance </p>
-					<p> <!-- à compléter --> </p>
+					<p> Refonte du site web et création d'une application mobile. Des maquettes à la mise en ligne. Création du planning des événements et de la boutique en ligne. 
+						Optimisation du référencement naturel. Maintenance en continue. </p>
 				</article>
 
-				<article>
+				<article class="gris">
+					<i class="fas fa-circle"></i>
+					<h4> TENZIN GYASTO, 14ème DALAÏ LAMA DU TIBET </h4>
+					<p> Oct. 2020 - Déc 2020 <br/>Paris </p>
+					<p> Développeuse Web Freelance </p>
+					<p> Création d'un site vitrine comportant agenda, articles, photos et vidéos. </p>
+				</article>
+
+				<article class="gris">
+					<i class="fas fa-circle"></i>
 					<h4> MARIANNE INTERNATIONAL </h4>
 					<p> Juin 2017 - Juin 2019 <br/>Paris </p>
 					<p> Directrice de la production événementielle </p>
-					<p> <!-- à compléter --> </p>
+					<p> Dans le secteur de la prestation de service : Management d'une équipe de 8 personnes (5 chargées de production, 1 chargée de recrutement, 2 assistantes). 
+						Recrutement et formation des collaborateurs. Répartition des dossiers. Élaboration et encadrement des méthodes de travail. Administratif salarial. 
+						Coaching et Coordination du département. Suivi des compétences et performances. 
+						Soutenances AO... </p>
 				</article>
 
 			</section>
@@ -70,18 +87,18 @@
 					<h3> RECOMMANDATIONS </h3>
 				</header>
 
-				<ul>
+				<ul class="gris">
 					<li> MARIE DUPONT </li>
 					<li> Manager, La Maison du Zéro Déchet </li>
 					<li> Téléphone : 01 40 50 60 70 </li>
 					<li> Email : marie.dupont@gmail.fr </li>
 				</ul>
 
-				<ul>
-					<li> PIERRE MARTIN </li>
-					<li> Dirigeant, Marianne International </li>
-					<li> Téléphone : 01 40 50 60 70 </li>
-					<li> Email : pierre.martin@gmail.com </li>
+				<ul class="gris">
+					<li> TENZIN GYASTO </li>
+					<li> Dalaï Lama </li>
+					<li> Téléphone : 0091 1892 221343 </li>
+					<li> Email : ohhdl@dalailama.com </li>
 				</ul>
 
 			</section>
@@ -89,17 +106,15 @@
 		</main>
 
 		
-		<footer> <!--  PARTIE FOND JAUNE -------------------------------------------------------------------------------------------------------------  -->
+		<footer> <!-- PARTIE FOND JAUNE -->
 			
-			<section> <!-- Section photo -->
-				<figure>
+				<figure> <!-- Photo -->
 					<img src="images/margaret-hamilton.png" alt="photo portrait">
 				</figure>
-			</section>
-
+		
 			<section> <!-- Section Contact -->
 				<h5> CONTACT </h5>
-				<address>
+				<address class="gris">
 					Adresse <br/>
 					75018 Paris, France <br/>
 					<br/>
@@ -119,7 +134,12 @@
 		
 			<section> <!-- Section à propos de moi -->
 				<h5> A PROPOS DE MOI </h5>
-				<p> <!-- à compléter --> </p>
+				<p class="gris"> Bonjour ! Moi c’est Valérie et j’ai 33 ans. <br/>
+					Mon parcours professionnel est riche et varié. De la restauration, à assistante médicale. Puis 7 ans dans la production événementielle en tant que chef de projet, 
+					responsable de recrutement, ainsi que manager de service. Et enfin développeuse web freelance. <br/>
+					Grâce à toutes ces expériences, j’ai pu développer : Autonomie, persévérance et adaptabilité. <br/>
+					Je serai ravi d’échanger avec vous sur la réalisation de vos projets.
+					 </p>
 			</section>
 				
 			<section> <!-- Section Loisirs -->
