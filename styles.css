@@ -1,55 +1,130 @@
 
-/* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
-
+/* VARIABLES CSS */
+:root 
+    { 
+        --bg-color: #FFFFFF; /* blanc */
+        --primary-color: #FFD54F; /* Jaune */
+        --secondary-color: #616161; /* Gris */
+    }
+/* ----------------------------------------- [ STYLES ] ------------------------------------------ */
 
 /* TYPOGRAPHIES */  
-
+   
     main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
     .entete { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
 
+    body { text-align: justify; }
+
 /* COULEURS DE FOND */
 
-    header, main { background-color: #FFFFFF; } /* fond blanc */
-    footer { background-color: #FFD54F; } /* fond jaune */
+    header, main { background-color: var(--bg-color); } 
+    footer { background-color: var(--primary-color); } 
+    h5 { background-color: var(--secondary-color);}
    
-/* COULEURS */
+/* COULEURS D'ELEMENTS */
 
-    .jaune { color: #FFD54F; } /* texte en jaune */
-    .gris { color: #616161; } /* texte en gris */
-    main i { color: #FFD54F; } /* icônes en jaune */
-    footer i { color: #616161; } /* icônes en gris */
+    .namecolor, h5 { color: var(--primary-color); } /* texte en jaune */
+    address, p, h2, article, ul { color: var(--secondary-color); font-size: 0.9em; } /*texte en gris */ 
+    footer i { color: var(--secondary-color); } /* icônes en gris */
+    main i { color: var(--primary-color); } /* icônes en jaune */
 
-    
-/* ---------------------------------------- [ STYLES SPECIFIQUES ] ----------------------------------------- */
+/* ---------------------------------------- [ DIMENSIONS ] ----------------------------------------- */
 
-    h1 
+    body, figure /* photo portrait */
+        {
+            display: flex; 
+            justify-content: center;
+            width: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    main /* partie principale */
+        {
+            width: 650px;
+            max-width: 75%;
+            margin:30px;
+        }   
+
+    footer /* partie annexe */
+        {
+            width: 300px;
+            max-width: 25%;
+        }        
+
+    h1 /* titre principal */
         { 
-        font-weight: bold; 
-        font-size: 3em;
+            font-weight: bold; 
+            font-size: 3em;
         }
         
-    h2 
+    h2 /* sous-titre principal */
         { 
-        font-weight: bold; 
-        font-size: 1.5em; 
+            font-weight: bold; 
+            font-size: 1.5em; 
         }
 
-    .trait 
-        { 
-        text-decoration: underline #ffd54f solid;
+    h5 /* titres annexes */
+        {
+            font-size: 1.2em;
+            text-align: center;
+            
+        }    
+
+    section header  /* souligner les sections princiaples */
+        {
+            border-bottom: 2px var(--primary-color) solid;
+        }    
+
+    .entete, main 
+        {
+            flex-direction: column;
+        }
+ 
+    footer p, i 
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 0.8em;
         }
 
+    address
+        {
+            font-style: normal;
+        } 
+
+    #list-reco 
+        {
+            display: flex;  
+            justify-content: space-around;
+        }    
+
+    .break
+        {
+            display: flex;
+            align-items: flex-start;
+        }       
+
+    .width /* dates d'expérience */
+        {
+            width: 200px;
+        }
+
+    .entete
+        {
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }    
+
+.fa-walking{
+    font-size: 5em;
+}
 
 
 
 
 
-
-
-
-
-
-/*--------------------------------------------------------------------------------------  
+    /*--------------------------------------------------------------------------------------  
 
 MEMO COULEURS :    
                 [ Blanc = #FFFFFF; ]
@@ -60,3 +135,4 @@ MEMO FONTS :
                 [ Typo Titre principal = 'Raleway Dots' ]
 
 --------------------------------------------------------------------------------------*/
+
