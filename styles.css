@@ -1,130 +1,215 @@
 
-/* VARIABLES CSS */
+/* ----------------------------------------- [ VARIABLES CSS ] ------------------------------------------ */
 :root 
     { 
         --bg-color: #FFFFFF; /* blanc */
         --primary-color: #FFD54F; /* Jaune */
-        --secondary-color: #616161; /* Gris */
+        --secondary-color: #263238; /* Gris */
     }
-/* ----------------------------------------- [ STYLES ] ------------------------------------------ */
+
+/* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
 
 /* TYPOGRAPHIES */  
    
-    main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
-    .entete { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
-
-    body { text-align: justify; }
+main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
+.entete { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
 
 /* COULEURS DE FOND */
 
-    header, main { background-color: var(--bg-color); } 
-    footer { background-color: var(--primary-color); } 
-    h5 { background-color: var(--secondary-color);}
+header, main { background-color: var(--bg-color); } 
+footer { background-color: var(--primary-color); } 
+h5 { background-color: var(--secondary-color);}
    
 /* COULEURS D'ELEMENTS */
 
-    .namecolor, h5 { color: var(--primary-color); } /* texte en jaune */
-    address, p, h2, article, ul { color: var(--secondary-color); font-size: 0.9em; } /*texte en gris */ 
-    footer i { color: var(--secondary-color); } /* icônes en gris */
-    main i { color: var(--primary-color); } /* icônes en jaune */
+/* texte */
+.namecolor, h5 { color: var(--primary-color); } 
+address, p, h2, article, ul { color: var(--secondary-color); font-size: 0.8rem; } 
+/* icônes */
+main i { color: var(--primary-color); } 
+footer i { color: var(--secondary-color); }
 
-/* ---------------------------------------- [ DIMENSIONS ] ----------------------------------------- */
+/* AJUSTEMENTS */ 
 
-    body, figure /* photo portrait */
-        {
-            display: flex; 
-            justify-content: center;
-            width: auto;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
+body   
+    { 
+        text-align: justify; 
+        display: flex; 
+        justify-content: center;
+        width: auto;
+        padding: 0rem;
+        margin: 0rem;
+    } 
 
-    main /* partie principale */
-        {
-            width: 650px;
-            max-width: 75%;
-            margin:30px;
-        }   
+/* ---------------------------------------- [ PARTIE ANNEXE <footer> ] ----------------------------------------- */
 
-    footer /* partie annexe */
-        {
-            width: 300px;
-            max-width: 25%;
-        }        
+footer  /* dimensions de la partie */
+    { 
+        width: 300px;
+        max-width: 25%;
+    }  
 
-    h1 /* titre principal */
-        { 
-            font-weight: bold; 
-            font-size: 3em;
-        }
-        
-    h2 /* sous-titre principal */
-        { 
-            font-weight: bold; 
-            font-size: 1.5em; 
-        }
+footer p  /* dimensions des sections */
+    { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-    h5 /* titres annexes */
-        {
-            font-size: 1.2em;
-            text-align: center;
-            
-        }    
+h5  /* Titres */
+    { 
+        font-size: 1.2rem;
+        text-align: center; 
+    }
 
-    section header  /* souligner les sections princiaples */
-        {
-            border-bottom: 2px var(--primary-color) solid;
-        }    
+img  /* cercle de la photo */
+    { 
+        border: 4px rgb(204, 168, 48) solid;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+    }
 
-    .entete, main 
-        {
-            flex-direction: column;
-        }
- 
-    footer p, i 
-        {
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 0.8em;
-        }
+address  /* suppression italic pour mail et site web */
+    { 
+        font-style: normal;
+    } 
 
-    address
-        {
-            font-style: normal;
-        } 
+a
+    {
+        color: rgb(182, 2, 2); 
+    }    
 
-    #list-reco 
-        {
-            display: flex;  
-            justify-content: space-around;
-        }    
+.center /* flexblox pour bloc icônes loisirs */
+    { 
+        display: flex;
+        justify-content: space-around; 
+    } 
 
-    .break
-        {
-            display: flex;
-            align-items: flex-start;
-        }       
+.icon-loisirs /* icônes de la section loisirs + cercles */ 
+    { 
+        font-size: 2.3rem; 
+        width: 1.1rem;
+        height: 1.1rem;
 
-    .width /* dates d'expérience */
-        {
-            width: 200px;
-        }
+        border: 2px var(--secondary-color) solid;
+        border-radius: 50%; 
+        padding: 0.07rem; 
+    } 
 
-    .entete
-        {
-            margin-top: 30px;
-            margin-bottom: 70px;
-        }    
+/* ---------------------------------------- [ PARTIE PRINCIPALE <main> ] ----------------------------------------- */
 
-.fa-walking{
-    font-size: 5em;
-}
+.entete, main  
+    { 
+        flex-direction: column; 
+    } 
+
+.entete /* dimensions de l'entête */
+    { 
+        margin-top: 30px;
+        margin-bottom: 70px; 
+
+    }
+main  /* dimensions de la partie */
+    { 
+        width: 650px;
+        max-width: 75%;
+        margin-left: 2.5rem; 
+    }  
+
+h1  /* Grand-titre */ 
+    { 
+        font-weight: bold; 
+        font-size: 3rem; 
+        margin-top: 1.5rem;
+        margin-bottom: 0.2rem;
+    }      
+
+h2  /* Grand Sous-titre */
+    { 
+        font-weight: bold; 
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem; 
+    }
+
+.trait /* demi trait sour "développeuse" */
+    { 
+        border-bottom: 2px var(--primary-color) solid;
+        width: 4.3rem;
+        margin-top: 0rem; 
+    }
+
+h3  /* titres section cv */
+    { 
+        font-size: 1.3rem; 
+    }  
+
+section header /* souligner les sections */
+    { 
+        border-bottom: 2px var(--primary-color) solid; 
+    } 
+
+h4
+    {
+        margin: 1.2rem 0.2rem 0.2rem 0.2rem;
+        padding: 0rem;
+    }
+
+.min.marge
+    {
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+.break  /* flexbox pour les articles des 3 sections */
+    { 
+        display: flex;
+        align-items: flex-start; 
+        margin-top: 0.5rem;
+    } 
+
+.width  /* largeur pour les dates d'expérience */
+    { 
+        width: 200px; 
+    }
+     
+.icon-cv  /* grandes icônes des 3 sections du CV */
+    { 
+        font-size: 1.7rem;
+        margin-right: 0.7rem; 
+    }
+
+.fa-asterisk, .fa-check-circle  /* petites icônes pour expériences en cours + terminées */
+    { 
+        font-size: 10px;
+        margin-right: 1rem; 
+    } 
+
+#list-reco  /* flexbox section recommandation */
+    { 
+        display: flex;  
+        justify-content: space-around; 
+    }  
+
+.namebold /* nom des contacts reco en gras */ 
+    { 
+        font-weight: bold; 
+    } 
+
+ul  /* retirer les puces des listes */
+    { 
+        list-style-type: none; 
+    } 
 
 
 
 
 
-    /*--------------------------------------------------------------------------------------  
+
+
+
+/*--------------------------------------------------------------------------------------  
 
 MEMO COULEURS :    
                 [ Blanc = #FFFFFF; ]
@@ -133,6 +218,7 @@ MEMO COULEURS :
 MEMO FONTS :   
                 [ Typo générale = 'Baloo Da 2' ]
                 [ Typo Titre principal = 'Raleway Dots' ]
+
 
 --------------------------------------------------------------------------------------*/
 
