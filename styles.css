@@ -46,13 +46,19 @@ body
 footer  /* dimensions de la partie */
     { 
         width: 300px;
-        max-width: 25%;
+        max-width: 30%;
     }  
 
 footer p  /* dimensions des sections */
     { 
         padding-left: 20px;
         padding-right: 20px;
+        margin: auto;
+    }
+
+.flex1 /* "à propose de moi, prend toute la place restante" */    
+    {
+        flex-grow: 1;
     }
 
 h5  /* Titres */
@@ -96,7 +102,7 @@ a
         border-radius: 50%; 
         padding: 0.07rem; 
     } 
-
+ 
 /* ---------------------------------------- [ PARTIE PRINCIPALE <main> ] ----------------------------------------- */
 
 .entete, main  
@@ -112,9 +118,10 @@ a
     }
 main  /* dimensions de la partie */
     { 
-        width: 650px;
-        max-width: 75%;
-        margin-left: 2.5rem; 
+        width: 700px;
+        max-width: 70%;
+        margin: 2.2rem; 
+        height: auto;
     }  
 
 h1  /* Grand-titre */ 
@@ -142,7 +149,8 @@ h2  /* Grand Sous-titre */
 
 h3  /* titres section cv */
     { 
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
+        margin: 0.4rem; 
     }  
 
 section header /* souligner les sections */
@@ -156,12 +164,6 @@ h4
         padding: 0rem;
     }
 
-.min.marge
-    {
-        margin: 0rem;
-        padding: 0rem;
-    }
-
 .break  /* flexbox pour les articles des 3 sections */
     { 
         display: flex;
@@ -169,6 +171,11 @@ h4
         margin-top: 0.5rem;
     } 
 
+main p
+    {
+        margin: 0.5rem 0.2rem;
+        padding: 0rem;
+    }
 .width  /* largeur pour les dates d'expérience */
     { 
         width: 200px; 
@@ -177,7 +184,7 @@ h4
 .icon-cv  /* grandes icônes des 3 sections du CV */
     { 
         font-size: 1.7rem;
-        margin-right: 0.7rem; 
+        margin-right: 0.7rem;
     }
 
 .fa-asterisk, .fa-check-circle  /* petites icônes pour expériences en cours + terminées */
@@ -200,6 +207,7 @@ h4
 ul  /* retirer les puces des listes */
     { 
         list-style-type: none; 
+        width: 200px;
     } 
 
 
@@ -209,16 +217,5 @@ ul  /* retirer les puces des listes */
 
 
 
-/*--------------------------------------------------------------------------------------  
 
-MEMO COULEURS :    
-                [ Blanc = #FFFFFF; ]
-                [ Jaune = #FFD54F; ]
-                [ Gris = #616161; ]
-MEMO FONTS :   
-                [ Typo générale = 'Baloo Da 2' ]
-                [ Typo Titre principal = 'Raleway Dots' ]
-
-
---------------------------------------------------------------------------------------*/
 
