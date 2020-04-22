@@ -3,7 +3,11 @@
 
 	<head> 
 		<meta charset="utf-8"> <!-- encodage -->
-		<link rel="stylesheet" href="styles.css" type="text/css" > <!-- Lien CSS-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive mobile --> 
+		
+		<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Lien CSS-->
+		<link rel="stylesheet" type="text/css" href="media.css"> <!-- Lien Média Queries -->
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!--Lien icônes https://fontawesome.com/ -->
 		<link href="https://fonts.googleapis.com/css?family=Baloo+Da+2%7CRaleway+Dots&amp;display=swap" rel="stylesheet"> <!-- Lien typographies https://fonts.google.com/ -->
 
@@ -31,9 +35,9 @@
 			</section>
 		
 
-			<section> <!-- Section à propos de moi -->
+			<section class="flex1" > <!-- Section à propos de moi -->
 				<h5> A PROPOS DE MOI </h5>
-				<p class="flex1"> Bonjour ! Moi c’est Valérie et j’ai 33 ans. <br>
+				<p > Bonjour ! Moi c’est Valérie et j’ai 33 ans. <br>
 					Mon parcours professionnel est déjà riche et varié. De la restauration, à assistante médicale. Puis 7 ans dans la production événementielle en tant que chef de projet, 
 					responsable de recrutement, ainsi que manager de service. Et enfin développeuse web freelance. <br>
 					Grâce à toutes ces expériences, j’ai pu développer autonomie, persévérance et adaptabilité. <br>
@@ -44,9 +48,9 @@
 			<section> <!-- Section Loisirs -->
 				<h5> LOISIRS </h5>
 				<div class="center">
-					 <i class="fas fa-hiking icon-loisirs"></i> <!-- icône randonnée -->
-					 <i class="fas fa-headphones-alt icon-loisirs"></i> <!-- icône musique -->
-					 <i class="fas fa-map-marked-alt icon-loisirs"></i> <!-- icône voyages -->
+					<i class="fas fa-hiking icon-loisirs"></i> <!-- icône randonnée -->
+					<i class="fas fa-headphones-alt icon-loisirs"></i> <!-- icône musique -->
+					<i class="fas fa-map-marked-alt icon-loisirs"></i> <!-- icône voyages -->
 				</div>
 			</section>
 
@@ -54,7 +58,7 @@
 		
 
 
-		<main> <!-- PARTIE PRINCIAPLE -->
+		<main> <!-- PARTIE PRINCIPALE -->
 
 			<header class="entete"> <!-- Titre principal -->		
 				<h1> <span class="namecolor">VALERIE</span> CANDON </h1>
@@ -71,11 +75,11 @@
 				</header>	
 
 				<article class="break">
-					<div class="break">
+					<div class="break date">
 						<p> <i class="fas fa-asterisk"></i> </p>
 						<p class="width">Févr. 2020 - Juillet 2020<br>à distance</p>
 					</div>
-					<div>
+					<div class="expe">
 						<h4> OPENCLASSROOMS </h4>
 						<p> Parcours Développeur Web </p>
 						<p> Formation de niveau 5 (BAC +2) reconnue par l'état, qui m'a permis d'acquérir les connaissances suivantes : 
@@ -95,11 +99,11 @@
 				</header>
 
 				<article class="break"> 
-					<div class="break" >
+					<div class="break date" >
 						<p><i class="fas fa-asterisk"></i> </p>
 						<p class="width" > Sept. 2020 - Poste actuel <br>Paris </p>
 					</div>
-					<div class="article">
+					<div class="expe">
 						<h4> LA MAISON DU ZERO DECHET </h4>
 						<p> Développeuse Web Freelance </p>
 						<p> Refonte du site web et création d'une application mobile. Des maquettes à la mise en ligne. Création du planning des événements et de la boutique en ligne. 
@@ -108,11 +112,11 @@
 				</article>
 
 				<article class="break">
-					<div class="break"  >
+					<div class="break date"  >
 						<p> <i class="far fa-check-circle"></i> </p> 
 						<p class="width" > Oct. 2020 - Déc 2020 <br>Paris </p>
 					</div>
-					<div class="article">
+					<div class="expe">
 						<h4> TENZIN GYASTO, 14ème DALAÏ LAMA DU TIBET </h4>
 						<p> Développeuse Web Freelance </p>
 						<p> Création d'un site vitrine comportant agenda, articles, photos et vidéos. </p>
@@ -120,11 +124,11 @@
 				</article>
 
 				<article class="break">		
-					<div class="break" >
+					<div class="break date" >
 						<p> <i class="far fa-check-circle"></i> </p>
 						<p class="width" > Juin 2017 - Juin 2019 <br>Paris </p>
 					</div>
-					<div class="article">
+					<div class="expe">
 						<h4> MARIANNE INTERNATIONAL </h4>
 						<p> Directrice de la production événementielle </p>
 						<p> Dans le secteur de la prestation de service : Management d'une équipe de 8 personnes (5 chargées de production, 1 chargée de recrutement, 2 assistantes). 

@@ -47,6 +47,9 @@ footer  /* dimensions de la partie */
     { 
         width: 300px;
         max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
     }  
 
 footer p  /* dimensions des sections */
@@ -81,6 +84,11 @@ address  /* suppression italic pour mail et site web */
         font-style: normal;
     } 
 
+address p
+    {
+        margin-bottom: 10px;
+    }
+
 a
     {
         color: rgb(182, 2, 2); 
@@ -94,13 +102,12 @@ a
 
 .icon-loisirs /* icônes de la section loisirs + cercles */ 
     { 
-        font-size: 2.3rem; 
-        width: 1.1rem;
-        height: 1.1rem;
+        font-size: 2rem; 
+
 
         border: 2px var(--secondary-color) solid;
         border-radius: 50%; 
-        padding: 0.07rem; 
+        padding: 1rem; 
     } 
  
 /* ---------------------------------------- [ PARTIE PRINCIPALE <main> ] ----------------------------------------- */
@@ -176,10 +183,15 @@ main p
         margin: 0.5rem 0.2rem;
         padding: 0rem;
     }
-.width  /* largeur pour les dates d'expérience */
+.date  /* largeur pour les dates d'expérience */
     { 
-        width: 200px; 
+        width: 30%; 
     }
+
+.expe  /* largeur pour les dates d'expérience */
+    { 
+        width: 70%; 
+    }    
      
 .icon-cv  /* grandes icônes des 3 sections du CV */
     { 
@@ -209,13 +221,3 @@ ul  /* retirer les puces des listes */
         list-style-type: none; 
         width: 200px;
     } 
-
-
-
-
-
-
-
-
-
-
