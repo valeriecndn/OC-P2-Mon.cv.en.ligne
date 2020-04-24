@@ -1,223 +1,281 @@
 
 /* ----------------------------------------- [ VARIABLES CSS ] ------------------------------------------ */
-:root 
-    { 
-        --bg-color: #FFFFFF; /* blanc */
-        --primary-color: #FFD54F; /* Jaune */
-        --secondary-color: #263238; /* Gris */
-    }
+:root { 
+    --bg-color: #FFFFFF; /* blanc */
+    --primary-color: #FFD54F; /* Jaune */
+    --secondary-color: #263238; /* Gris */
+}
 
 /* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
 
-/* TYPOGRAPHIES */  
+body {    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0rem;
+    text-align: justify;
+}
+
+/*----- Typographies -----*/ 
    
 main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
-.entete { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
+main header { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
 
-/* COULEURS DE FOND */
+/*----- Couleurs de fond -----*/
 
-header, main { background-color: var(--bg-color); } 
-footer { background-color: var(--primary-color); } 
+header, main { background-color: var(--bg-color);} 
+footer { background-color: var(--primary-color);} 
 h5 { background-color: var(--secondary-color);}
    
-/* COULEURS D'ELEMENTS */
+/*----- Couleurs d'éléments -----*/
 
-/* texte */
 .namecolor, h5 { color: var(--primary-color); } 
 address, p, h2, article, ul { color: var(--secondary-color); font-size: 0.8rem; } 
-/* icônes */
+a { color: rgb(182, 2, 2); } 
+
 main i { color: var(--primary-color); } 
 footer i { color: var(--secondary-color); }
 
-/* AJUSTEMENTS */ 
-
-body   
-    { 
-        text-align: justify; 
-        display: flex; 
-        justify-content: center;
-        width: auto;
-        padding: 0rem;
-        margin: 0rem;
-    } 
-
-/* ---------------------------------------- [ PARTIE ANNEXE <footer> ] ----------------------------------------- */
-
-footer  /* dimensions de la partie */
-    { 
-        width: 300px;
-        max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 25px;
-    }  
-
-footer p  /* dimensions des sections */
-    { 
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: auto;
-    }
-
-.flex1 /* "à propose de moi, prend toute la place restante" */    
-    {
-        flex-grow: 1;
-    }
-
-h5  /* Titres */
-    { 
-        font-size: 1.2rem;
-        text-align: center; 
-    }
-
-img  /* cercle de la photo */
-    { 
-        border: 4px rgb(204, 168, 48) solid;
-        border-radius: 50%;
-        margin: auto;
-        margin-top: 2rem;
-        display: flex;
-    }
-
-address  /* suppression italic pour mail et site web */
-    { 
-        font-style: normal;
-    } 
-
-address p
-    {
-        margin-bottom: 10px;
-    }
-
-a
-    {
-        color: rgb(182, 2, 2); 
-    }    
-
-.center /* flexblox pour bloc icônes loisirs */
-    { 
-        display: flex;
-        justify-content: space-around; 
-    } 
-
-.icon-loisirs /* icônes de la section loisirs + cercles */ 
-    { 
-        font-size: 2rem; 
-
-
-        border: 2px var(--secondary-color) solid;
-        border-radius: 50%; 
-        padding: 1rem; 
-    } 
- 
 /* ---------------------------------------- [ PARTIE PRINCIPALE <main> ] ----------------------------------------- */
 
-.entete, main  
-    { 
-        flex-direction: column; 
-    } 
+main { 
+    width: 700px;
+    max-width: 70%;
+    margin: 2.2rem; 
+    height: auto;
+}  
 
-.entete /* dimensions de l'entête */
-    { 
-        margin-top: 30px;
-        margin-bottom: 70px; 
+/*----- Titre principal -----*/
 
+.entete, main { 
+    flex-direction: column; 
+} 
+.entete { 
+    margin-top: 30px;
+    margin-bottom: 70px; 
+
+}
+h1 { 
+    font-weight: bold; 
+    font-size: 3rem; 
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+}      
+h2 { 
+    font-weight: bold; 
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+}
+.trait { 
+    border-bottom: 2px var(--primary-color) solid;
+    width: 4.3rem;
+    margin-top: 0rem; 
+}
+
+/*----- Sections du CV -----*/
+
+h3 { 
+    font-size: 1.3rem;
+    margin: 0.4rem; 
+}  
+section header { 
+    border-bottom: 2px var(--primary-color) solid; 
+} 
+h4 {
+    margin: 1.2rem 0.2rem 0.2rem 0.2rem;
+    padding: 0rem;
+}
+.break { 
+    display: flex;
+    align-items: flex-start; 
+    margin-top: 0.5rem;
+}       
+main p {
+    margin: 0.5rem 0.2rem;
+    padding: 0rem;
+}
+.date { 
+    width: 30%; 
+}
+.expe { 
+    width: 70%; 
+} 
+
+/*----- Icônes -----*/
+
+.icon-cv { 
+    font-size: 1.7rem;
+    margin-right: 0.7rem;
+}
+.fa-asterisk, .fa-check-circle { 
+    font-size: 10px;
+    margin-right: 1rem; 
+} 
+
+/*----- Recommandantions -----*/
+
+#list-reco { 
+    display: flex;  
+    justify-content: space-around; 
+}  
+.namebold { 
+    font-weight: bold; 
+} 
+ul { 
+    list-style-type: none; 
+    width: 200px;
+} 
+
+    /* ---------------------------------------- [ PARTIE ANNEXE <footer> ] ----------------------------------------- */
+
+footer { 
+    width: 30%; 
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+} 
+footer p { 
+    padding: 0rem 1rem 0.5rem 1rem ;
+    margin: auto;
+}   
+h5 { 
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*----- Photo -----*/
+
+img { 
+    border: 0.25rem solid rgb(204, 168, 48);
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+/*----- Contact -----*/
+
+address { 
+    font-style: normal;
+}
+
+/*-----à propos de moi -----*/
+
+.flexgrow { 
+    flex-grow: 1;
+}
+
+/*----- Loisirs -----*/
+
+.center { 
+    display: flex;
+    justify-content: space-around; 
+} 
+
+.icon-loisirs { 
+    font-size: 2rem; 
+    border: 2px var(--secondary-color) solid;
+    border-radius: 50%; 
+    padding: 1rem; 
+} 
+
+
+/* ----------------------------------------- [ MEDIA QUERIES ] ------------------------------------------ */
+
+
+/* -------------- [ Medium screen ] -------------- */
+
+@media screen and (max-width: 900px) { 
+
+    body {
+        display: flex;
+        flex-direction: column;
     }
-main  /* dimensions de la partie */
-    { 
-        width: 700px;
-        max-width: 70%;
-        margin: 2.2rem; 
-        height: auto;
-    }  
 
-h1  /* Grand-titre */ 
-    { 
-        font-weight: bold; 
-        font-size: 3rem; 
-        margin-top: 1.5rem;
-        margin-bottom: 0.2rem;
+    footer, main { 
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        margin: 1rem; 
+            
+    }
+
+    .entete { 
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 4rem;
+    }
+
+    h1 { 
+        font-size: 2.5rem;
     }      
 
-h2  /* Grand Sous-titre */
-    { 
-        font-weight: bold; 
-        font-size: 1.5rem;
-        margin-top: 0rem;
-        margin-bottom: 0rem; 
+    h2 { 
+        font-size: 1rem;
     }
 
-.trait /* demi trait sour "développeuse" */
-    { 
+    .trait {
         border-bottom: 2px var(--primary-color) solid;
-        width: 4.3rem;
+        width: 2.8rem;
         margin-top: 0rem; 
-    }
-
-h3  /* titres section cv */
-    { 
-        font-size: 1.3rem;
-        margin: 0.4rem; 
-    }  
-
-section header /* souligner les sections */
-    { 
-        border-bottom: 2px var(--primary-color) solid; 
-    } 
-
-h4
-    {
-        margin: 1.2rem 0.2rem 0.2rem 0.2rem;
-        padding: 0rem;
-    }
-
-.break  /* flexbox pour les articles des 3 sections */
-    { 
-        display: flex;
-        align-items: flex-start; 
-        margin-top: 0.5rem;
-    } 
-
-main p
-    {
-        margin: 0.5rem 0.2rem;
-        padding: 0rem;
-    }
-.date  /* largeur pour les dates d'expérience */
-    { 
-        width: 30%; 
-    }
-
-.expe  /* largeur pour les dates d'expérience */
-    { 
-        width: 70%; 
     }    
-     
-.icon-cv  /* grandes icônes des 3 sections du CV */
-    { 
-        font-size: 1.7rem;
-        margin-right: 0.7rem;
+
+}
+
+/* -------------- [ Small screen ] -------------- */
+
+@media screen and (max-width: 550px) {
+
+    article, #list-reco {
+        display: flex;
+        flex-direction: column;
     }
 
-.fa-asterisk, .fa-check-circle  /* petites icônes pour expériences en cours + terminées */
-    { 
-        font-size: 10px;
-        margin-right: 1rem; 
-    } 
+    h1 { 
+        font-size: 1.8rem;
+    }      
 
-#list-reco  /* flexbox section recommandation */
-    { 
-        display: flex;  
-        justify-content: space-around; 
+    h2 { 
+        font-size: 0.8rem;
+    }
+
+    p, li, h3, h4, h5 {
+        font-size: 0.8rem;
+    }
+
+    .entete { 
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 0rem;
+        text-align: center;  
+    }
+
+    .trait {
+        border-bottom: 2px var(--primary-color) solid;
+        width: 2.8rem;
+        margin-top: 0rem; 
+        display: none;
     }  
 
-.namebold /* nom des contacts reco en gras */ 
-    { 
-        font-weight: bold; 
+    .date { 
+        width: auto; 
+    }
+    .expe { 
+        width: auto; 
     } 
 
-ul  /* retirer les puces des listes */
-    { 
-        list-style-type: none; 
-        width: 200px;
-    } 
+
+
+}
+
+
+
+
+
+
+
+
