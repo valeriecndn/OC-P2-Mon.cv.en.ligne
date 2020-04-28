@@ -81,12 +81,11 @@ h2 {
     font-size: 1.5rem;
     margin: 0.5rem 1rem 1rem 0.5rem;
 }
-  
 section header { 
     border-bottom: 2px var(--primary-color) solid; 
 }
 
-/*----- Expériences -----*/
+/*----- Articles -----*/
 
 .break { 
     display: flex;
@@ -176,7 +175,6 @@ address {
     display: flex;
     justify-content: space-around;
 } 
-
 .icon-loisirs { 
     font-size: 1.8rem; 
     border: 2px var(--secondary-color) solid;
@@ -186,6 +184,7 @@ address {
 
 
 /* ----------------------------------------- [ MEDIA QUERIES ] ------------------------------------------ */
+
 
 /* ----------- [ Medium screen ] ----------- */
 
@@ -201,31 +200,25 @@ address {
         max-width: 100%;
   
     }
-
     main {
         padding: 0.8rem 0rem;  
     }
-
     .entete { 
         margin-top: 30px;
         margin-bottom: 50px;
         margin-left: 4rem;
     }
-
     h1 { 
         font-size: 2.5rem;
     }
-
     h2 { 
         font-size: 1rem;
     }
-
     .trait {
         border-bottom: 2px var(--primary-color-mq1) solid;
         width: 2.9rem;
         margin-top: 0rem; 
     }
-
     article {
         margin: 1rem;
     }
@@ -249,12 +242,10 @@ address {
     main, footer {
         margin: 0rem;
     }    
-    
     main h4, p {
         margin-top: 0rem;
         margin-bottom: 0.2rem;
     }
-
     article {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
@@ -265,52 +256,42 @@ address {
         margin-left: 0rem;
         text-align: center;  
     }
-
     h1 { 
         font-size: 1.7rem;
     }
-
     h2 { 
         font-size: 0.8rem;
     }
-
     .trait {
         border-bottom: 2px var(--primary-color-mq2) solid;
         width: 2.8rem;
         margin-top: 0rem; 
         display: none;
     }
-
     .icon-cv, h3 { 
         font-size: 0.8rem;
         margin: 0.5rem;
     }
-
     article, #list-reco {
         display: flex;
         flex-direction: column;
     }
-    
     ul {
         padding-left: 1rem;
     }
-    
     .date { 
         width: auto;
         margin-top: 0rem;
         margin-bottom: 0rem;  
     }
-
     .expe { 
         width: auto;
         margin-top: 0rem;
         margin-bottom: 0rem;  
     }
-
     h4, p, li {
         font-size: 0.6rem;
     }
-
     .fa-asterisk, .fa-check-circle { 
         font-size: 7px;
     }
