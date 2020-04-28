@@ -4,9 +4,6 @@
     --bg-color: #FFFFFF; 
     --primary-color: #FFD54F;
     --secondary-color: #263238; 
-
-    --primary-color-mq1: #4DD0E1; 
-    --primary-color-mq2: #e57373;
 }
 /* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
 
@@ -21,7 +18,7 @@ body {
 /*----- Typographies -----*/ 
    
 main, footer { font-family: 'Baloo Da 2', "century gothic", cursive , sans-serif ; } /* typo générale */
-main header { font-family: 'Raleway Dots', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
+main header, h5 { font-family: 'Roboto Mono', "century gothic", cursive , sans-serif ; } /* typo du titre principal */
 
 /*----- Couleurs de fond -----*/
 
@@ -58,20 +55,18 @@ main {
 
 }
 h1 { 
-    font-weight: bold; 
     font-size: 3rem; 
     margin-top: 1.5rem;
     margin-bottom: 0.4rem;
 }      
 h2 { 
-    font-weight: bold; 
     font-size: 1.5rem;
     margin-top: 0rem;
     margin-bottom: 0rem; 
 }
 .trait { 
     border-bottom: 2px var(--primary-color) solid;
-    width: 4.3rem;
+    width: 4.9rem;
     margin-top: 0rem; 
 }
 
@@ -214,24 +209,14 @@ address {
     h2 { 
         font-size: 1rem;
     }
-    .trait {
-        border-bottom: 2px var(--primary-color-mq1) solid;
-        width: 2.9rem;
+    .trait { 
+        border-bottom: 1.8px var(--primary-color) solid;
+        width: 3rem;
         margin-top: 0rem; 
-    }
+    }    
     article {
         margin: 1rem;
     }
-
-    footer { background-color: var(--primary-color-mq1); }
-
-    .namecolor, h5 { color: var(--primary-color-mq1); }
-
-    main i { color: var(--primary-color-mq1); } 
-
-    section header { border-bottom: 2px var(--primary-color-mq1) solid; } 
-
-    img { border: 0.25rem solid #00ACC1; }
 
 }
 
@@ -253,8 +238,7 @@ address {
     .entete { 
         margin-top: 2rem;
         margin-bottom: 2rem;
-        margin-left: 0rem;
-        text-align: center;  
+        margin-left: 2rem;
     }
     h1 { 
         font-size: 1.7rem;
@@ -262,12 +246,11 @@ address {
     h2 { 
         font-size: 0.8rem;
     }
-    .trait {
-        border-bottom: 2px var(--primary-color-mq2) solid;
-        width: 2.8rem;
+    .trait { 
+        border-bottom: 1.5px var(--primary-color) solid;
+        width: 2.3rem;
         margin-top: 0rem; 
-        display: none;
-    }
+    } 
     .icon-cv, h3 { 
         font-size: 0.8rem;
         margin: 0.5rem;
@@ -295,16 +278,6 @@ address {
     .fa-asterisk, .fa-check-circle { 
         font-size: 7px;
     }
-
-    footer { background-color: var(--primary-color-mq2); }
-
-    .namecolor, h5 { color: var(--primary-color-mq2); } 
-
-    main i { color: var(--primary-color-mq2); }
-
-    section header { border-bottom: 2px var(--primary-color-mq2) solid; }
-
-    img { border: 0.25rem solid #ae4d4d; }
 
 }
 
